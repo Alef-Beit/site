@@ -249,27 +249,42 @@
                             </div>
                         </div>
 
-                        {/* Image Placeholder */}
+                        {/* Abstract Visual Representation */}
                         <div className="relative hidden md:block">
                              <div className="relative w-full aspect-square max-w-md mx-auto">
                                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-cyan-400 rounded-2xl rotate-6 opacity-30 blur-lg"></div>
-                                <div className="absolute inset-0 bg-slate-200 rounded-2xl overflow-hidden">
-                                    <img
-                                        src="future1.jpg"
-                                        alt="חינוך לעידן החדש"
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-
-                                {/* Floating Card at Bottom */}
-                                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white p-6 rounded-xl shadow-2xl max-w-xs">
-                                    <div className="flex items-center gap-3 mb-2">
-                                        <HeartIcon className="w-6 h-6 text-red-500" />
-                                        <span className="font-bold text-slate-800">הלב של החינוך</span>
+                                <div className="absolute inset-0 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 flex flex-col justify-between">
+                                    <div className="flex justify-between items-start">
+                                        <div className="bg-white/20 p-3 rounded-lg">
+                                            <BrainIcon className="w-8 h-8 text-white" />
+                                        </div>
+                                        <div className="text-right text-white">
+                                            <div className="text-sm opacity-80">קצב התקדמות</div>
+                                            <div className="text-3xl font-bold"> פי 1.5</div>
+                                        </div>
                                     </div>
-                                    <p className="text-sm text-slate-600">
-                                        שייכות, משמעות, חוסן
-                                    </p>
+                                    
+                                    <div className="space-y-4 my-8">
+                                        <div className="h-2 bg-white/20 rounded-full overflow-hidden">
+                                            <div className="h-full bg-green-400 w-3/4"></div>
+                                        </div>
+                                        <div className="h-2 bg-white/20 rounded-full overflow-hidden">
+                                            <div className="h-full bg-blue-400 w-1/2"></div>
+                                        </div>
+                                        <div className="h-2 bg-white/20 rounded-full overflow-hidden">
+                                            <div className="h-full bg-purple-400 w-5/6"></div>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex gap-4 items-center bg-white/10 p-4 rounded-xl">
+                                        <div className="bg-green-500 rounded-full w-10 h-10 flex items-center justify-center font-bold text-white">
+                                            AI
+                                        </div>
+                                        <div className="text-white text-sm">
+                                            <div>מורה פרטי דיגיטלי</div>
+                                            <div className="opacity-70">מותאם אישית לכל תלמיד</div>
+                                        </div>
+                                    </div>
                                 </div>
                              </div>
                         </div>
@@ -502,7 +517,7 @@
                                         </div>
                                         <div className="relative">
                                              <img 
-                                                src="girlpc.jpg" 
+                                                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
                                                 alt="תלמידים לומדים באופן עצמאי מול מחשב" 
                                                 className="rounded-2xl shadow-lg transform rotate-2 hover:rotate-0 transition-transform duration-500 w-full object-cover h-full min-h-[400px]"
                                             />
@@ -549,7 +564,7 @@
                                         </div>
                                         <div className="relative h-full min-h-[300px]">
                                              <img 
-                                                src="PBLKIds.png" 
+                                                src="PBLKIds.jpg" 
                                                 alt="" 
                                                 className="rounded-2xl shadow-lg transform -rotate-2 hover:rotate-0 transition-transform duration-500 w-full object-cover h-full absolute inset-0"
                                                 onError={(e) => {
@@ -689,11 +704,11 @@
                     bio: "מנהל פדגוגי ומוביל תחום מיומנויות ו-PBL. בעל ניסיון עשיר בהובלת תהליכי עומק חינוכיים.",
                     image: "ChenMargalit_headshot.jpeg"
                 },
-                {
-                    name: "מומיק נבו אומְשְוָיִף",
-                    role: "שותף מייסד",
+                { 
+                    name: "מומיק נבו", 
+                    role: "שותף מייסד", 
                     bio: "מנהל בית הספר המעבדה. איש חינוך ותיק עם ניסיון רב בהובלת בתי ספר וצוותי הוראה.",
-                    image: "Mumik_Headshot.jpeg"
+                    image: "Screenshot 2025-12-17 at 11.20.49 PM.png"
                 }
             ];
 
@@ -769,8 +784,8 @@
                 "פרופ' ירון להבי", "ענבל רון", "דנה רימר", "פרופ' יורם יובל", 
                 "שרה גרינברג", "יואב קדמון", "דגנית שרייבר", "עמית רפאל", 
                 "אינג' רוני מן", "ד\"ר מיה ויזל", "סתיו מזרחי", "רותי אנזל",
-                "מוריה רויז", "כרמל אש", "נתנאל בית הון", "נטע שרייבר",
-                "שני קידרמן", "צחי אסא", "אופיר לוסטמן", "אמנון שפלר"
+                "מורי רויז", "כרמל אש", "נתנאל בית הון", "נטע שרייבר",
+                "שני קידמן", "צחי אסא", "אופיר לוסטמן", "אמנון שפלר"
             ];
 
             return (
